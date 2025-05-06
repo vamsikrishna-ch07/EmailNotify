@@ -50,7 +50,6 @@ public class ProfileServiceImplTest {
                         .userName("TestUser")//below if we use more than single list we can go  with list.of,arras.aslistof like that otherwise simply use collection.singltone(it is a static method from collections
                         .posts(List.of(
                                 Post.builder().content("Test post").build()
-                                //Post.builder().content("Post 2").build()
                         ))
                         .build())
                 .build();
