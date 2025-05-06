@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: EmailNotify
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/vk
+    username: root
+    password: Kr12@984872
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+
