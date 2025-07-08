@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.scheduling.annotation.EnableScheduling;
+
 @Builder
 @Data
 @NoArgsConstructor
@@ -14,11 +14,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 public class Profile {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private  Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String fullName;
-   @OneToOne(cascade = CascadeType.ALL)
-   @JoinColumn(name="user_id")
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "user_id")
     private User user;
 
 }
