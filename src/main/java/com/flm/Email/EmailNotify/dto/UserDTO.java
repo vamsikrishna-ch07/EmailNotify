@@ -1,7 +1,5 @@
 package com.flm.Email.EmailNotify.dto;
 
-import com.flm.Email.EmailNotify.model.Post;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

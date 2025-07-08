@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 public class EmailNotifyApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(EmailNotifyApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(EmailNotifyApplication.class, args);
+    }
 
 }
