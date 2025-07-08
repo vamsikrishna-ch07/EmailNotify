@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.List;
+
 @Builder
 @Data
 @NoArgsConstructor
@@ -20,7 +21,7 @@ public class User {
     private String userName;
     private String description;
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinColumn(name="user_id")
+    @JoinColumn(name = "user_id")
     private List<Post> posts;
 
 }
