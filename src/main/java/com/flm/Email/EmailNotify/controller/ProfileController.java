@@ -23,6 +23,8 @@ public class ProfileController {
 
     }
 
+
+
     @PutMapping("/UpdateFullName")
     public ResponseEntity<ProfileDTO> UpdateProfile(@RequestParam Long id, @RequestBody ProfileDTO DTO) {
         ProfileDTO updateProfile = profileService.updateProfile(id, DTO);
