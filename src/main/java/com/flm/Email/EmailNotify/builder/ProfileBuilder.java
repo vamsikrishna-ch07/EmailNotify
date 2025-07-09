@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 
 public class ProfileBuilder {
 
-
     public static Profile profileFromProfileDTO(ProfileDTO dto) {
 
         return Profile.builder()
