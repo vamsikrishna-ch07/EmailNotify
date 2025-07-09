@@ -13,7 +13,6 @@ public interface ProfileRepository extends JpaRepository<Profile, Long> {
 
     @Query(value = "SELECT * FROM profile ORDER BY full_name ASC", nativeQuery = true)
     List<Profile> getProfilesSortedByName();
-
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM post WHERE user_id IN (SELECT id FROM user WHERE user_id = :profileId)", nativeQuery = true)
