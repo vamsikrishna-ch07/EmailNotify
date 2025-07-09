@@ -58,7 +58,6 @@ public class ProfileServiceImplTest {
 
         when(profileRepository.save(any(Profile.class))).thenReturn(profile);
 
-
         ProfileDTO result = profileService.saveProfile(profileDTO);
 
 
