@@ -20,7 +20,6 @@ public class ProfileController {
     public ResponseEntity<ProfileDTO> saveUser(@RequestBody ProfileDTO profileDTO) {
         ProfileDTO profile = profileService.saveProfile(profileDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(profile);
-
     }
 
 
